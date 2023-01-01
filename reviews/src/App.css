@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Kodchasan:wght@200&display=swap");
+#main header {
+    margin-top: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    color: rgb(0, 75, 75);
+}
+
+#main header #decoration {
+    margin-top: 0.75rem;
+    width: 150px;
+    height: 5px;
+    background-color: rgb(86, 154, 255);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .card {
+    margin-top: 2rem;
+    width: 80%;
+    max-width: 650px;
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Kodchasan", sans-serif;
+}
+
+span {
+    font-size: 0.8rem;
+    color: rgb(14, 93, 213);
+}
+
+.container .card .body .text {
+    color: rgb(57, 79, 94);
+    margin: 1rem 0;
+}
+
+.container .card .avatar {
+    position: relative;
+    margin: 1rem 0;
+}
+
+.container .card .avatar .quote {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #569aff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.nextPrevious {
+    background-color: white;
+    border: none;
+    font-size: 1.5rem;
+    color: #569aff;
+    cursor: pointer;
+}
+
+.nextPrevious:hover {
+    transform: scale(1.2);
+}
+
+.container .card .avatar .img {
+    margin: auto;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    box-shadow: 8px -4px rgb(96, 185, 248);
+    min-height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.container .card .avatar .img img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.random {
+    background-color: rgb(179, 235, 255);
+    border: none;
+    font-size: 0.9rem;
+    color: #569aff;
+    padding: 0.5rem 1rem;
+    margin: 0.6rem 0;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.random:hover {
+    background-color: rgb(48, 107, 225);
+    color: rgb(0, 75, 75);
+}

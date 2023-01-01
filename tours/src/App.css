@@ -1,0 +1,127 @@
+.container {
+    margin-top: 2rem;
+}
+
+#tours>#cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#empty button {
+    display: block;
+    margin: 2rem auto;
+    border-radius: 3px;
+    padding: 2px 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 1.2rem;
+    background-color: rgb(118, 101, 218);
+}
+
+#tours #title,
+#loding,
+#empty h2 {
+    line-height: 1rem;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#tours #decoration {
+    width: 100px;
+    height: 5px;
+    background-color: rgb(2, 160, 181);
+    margin: 1rem auto;
+}
+
+#tours .card {
+    background-color: white;
+    width: 40%;
+    min-width: 350px;
+    text-align: justify;
+    margin: 1rem 0;
+}
+
+#tours .card .card-img {
+    height: 300px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#tours .card .card-img .img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-body {
+    font-size: 0.7rem;
+    padding: 0 1rem;
+}
+
+.button {
+    display: block;
+    margin: 0.6rem auto;
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px solid red;
+    color: red;
+    font-weight: bold;
+    border-radius: 2px;
+    font-family: "Times New Roman", Times, serif;
+    cursor: pointer;
+}
+
+.card-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+    font-size: 0.7rem;
+}
+
+@media screen and (max-width: 1000px) {
+    #tours .card .card-img {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #tours .card {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .card-title {
+        font-size: 0.8rem;
+    }
+    .card-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.button:hover {
+    border-color: rgb(164, 214, 255);
+}
+
+.price {
+    background-color: aquamarine;
+    padding: 0 1rem;
+    color: white;
+    font-weight: bold;
+}
+
+.show {
+    color: rgb(92, 195, 247);
+    text-decoration: underline;
+    cursor: pointer;
+}
