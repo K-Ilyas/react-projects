@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Kodchasan&display=swap");
+.container {
+    position: relative;
+    max-width: 900px;
+    width: 95vw;
+    min-width: 300px;
+    background-color: white;
+    padding: 25px 15px;
+    border-radius: 5px;
+    font-family: "Kodchasan", sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 5.7rem auto;
+}
+
+.container::before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: rgb(222, 73, 135);
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    z-index: -1;
+}
+
+.container::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    border-bottom: 20px solid rgb(222, 73, 135);
+    border-right: 20px solid rgb(222, 73, 135);
+    position: absolute;
+    bottom: -40px;
+    right: -40px;
+    z-index: -1;
+}
+
+.container h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 30%;
+    margin: 20px 20px 0 0;
+}
+
+.container .questions {
+    width: 100%;
+}
+
+.container .questions .question {
+    background-color: white;
+    border: 2px solid lightgray;
+    padding: 10px 5px;
+    border-radius: 5px;
+    margin: 10px 0;
+    box-shadow: 1px -1px 10px rgb(236, 235, 235), -1px 1px 10px rgb(236, 235, 235), -1px -1px 10px rgb(236, 235, 235), 1px 1px 10px rgb(236, 235, 235);
+}
+
+.container .questions .question .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 8px;
+}
+
+.container .questions .question .header p {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.container .questions .question .header button {
+    width: 30px;
+    height: 30px;
+    color: red;
+    border-radius: 50%;
+    border: none;
+    text-align: center;
+    padding: 8px 0;
+}
+
+.container .questions .question .header button:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.container .questions .question .body {
+    margin: 10px 10px;
+    font-size: 0.9rem;
+}
+
+
+/* media queries*/
+
+@media screen and (max-width: 1000px) {
+    .container::before {
+        display: none;
+    }
+    .container::after {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 20px;
+    }
+    .container h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        width: 100%;
+        margin: 0 0 15px 2px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container h3 {
+        font-size: 1rem;
+    }
+    .container .questions .question .header p {
+        font-size: 0.8rem;
+    }
+    .container .questions .question .body {
+        font-size: 0.7rem;
+    }
+}
