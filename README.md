@@ -8,3 +8,4 @@
  2. Reviews. [Demo](https://reviews-kilyas.netlify.app/)
  3. Questions(accordion). [Demo](https://questions-answers-kilyas.netlify.app/)
  4. Menu. [Demo](https://menu-kilyas.netlify.app/)
+ 5. Tabs. [Demo](https://tabs-kilyas.netlify.app/)
