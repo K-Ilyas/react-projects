@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Kodchasan:wght@200&display=swap");
+*,
+:after,
+:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kodchasan", sans-serif;
+  font-size: 1rem;
+  background-color: #e4e4ff;
+}
+
+button {
+  font-family: "Kodchasan", sans-serif;
+}
+
+.loading {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+main {
+  margin: 5rem auto;
+}
+main .footer-btn {
+  display: block;
+  text-transform: uppercase;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: bolder;
+  margin: 1rem auto;
+  background-color: #68a3fc;
+  color: white;
+  padding: 0.5rem 2rem;
+}
+main .footer-btn:hover {
+  transform: scale(1.1);
+  background-color: #5498fe;
+  color: #000065;
+}
+
+main header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #000065;
+}
+main header #decoration {
+  margin-top: 0.7rem;
+  width: 60px;
+  height: 5px;
+  background-color: #68a3fc;
+}
+
+.container {
+  margin-top: 3rem;
+  padding: 0 2rem;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 90vw;
+}
+.container .companies {
+  display: flex;
+  max-width: 400px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+.container .companies .companie {
+  text-transform: uppercase;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: bolder;
+  background-color: transparent;
+  font-size: 1.2rem;
+  padding: 0.5rem 0.1rem;
+  border-bottom: 2px solid transparent;
+}
+.container .companies .companie:hover {
+  transition: all 0.5s linear;
+  color: #68a3fc;
+  border-color: #68a3fc;
+}
+.container .info {
+  margin: 1.4rem 0;
+}
+.container .info h2 {
+  font-size: 1.3rem;
+}
+.container .info .company-name {
+  text-transform: uppercase;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: bolder;
+  padding: 0.2rem 1rem;
+  border-radius: 2px;
+  color: black;
+  background-color: lightgray;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+.container .info .company-name,
+.container .info .tasks,
+.container .info h2,
+.container .info .date {
+  margin-bottom: 1rem;
+}
+.container .info .tasks span {
+  margin-right: 1rem;
+}
+.container .info .tasks .task {
+  margin-bottom: 0.5rem;
+  text-align: justify;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.6rem;
+}
+
+@media screen and (min-width: 990px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .container .companies {
+    margin: 1rem auto;
+    max-width: 300px;
+    width: 20%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .container .companies .companie {
+    margin-bottom: 1rem;
+    border-bottom: none;
+    border-left: 2px solid transparent;
+    padding: 0.5rem 1rem;
+  }
+
+  .info {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
