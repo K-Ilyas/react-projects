@@ -20,6 +20,7 @@ import { useState, useEffect } from "react";
 import data from "./data";
 
 function App() {
+
     const [people] = useState(data);
     const [index, setIndex] = useState(0);
 
@@ -30,7 +31,7 @@ function App() {
         return () => {
             clearInterval(animation);
         }
-    }, [index])
+    }, [index]);
 
     // controlle index value
     const handleIndex = (value) => {
