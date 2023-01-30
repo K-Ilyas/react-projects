@@ -10,3 +10,5 @@
  4. Menu. [Demo](https://menu-kilyas.netlify.app/)
  5. Tabs. [Demo](https://tabs-kilyas.netlify.app/)
  6. Slider. [Demo](https://slider-kilyas.netlify.app/)
+### Forms 
+ 1. Lorem-ipsum [Demo](https://lorem-ipsum-kilyas.netlify.app/)
