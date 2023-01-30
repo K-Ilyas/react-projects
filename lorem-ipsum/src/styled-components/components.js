@@ -36,7 +36,7 @@ export const Form = styled.form`
 `
 
 export const Label = styled.label`
-     font-size: 0.9 rem;
+     font-size: 0.9 rem;    
     @media screen and (min-width:600px) {
       font-size: 1rem;
       font-weight: bold;
