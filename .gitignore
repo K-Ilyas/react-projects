@@ -1,0 +1,40 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/birthday-reminder/node_modules
+/reviews/node_modules
+/tours/node_modules
+/accordion/node_modules
+/menu/node_modules
+/tabs/node_modules
+/slider/node_modules
+/lorem-ipsum/node_modules
+/color-generator/node_modules
+/grocery-bud/node_modules
+/.pnp
+
+# testing
+/coverage
+
+# production
+/birthday-reminder/build
+/reviews/build
+/tours/build
+/accordion/build
+/menu/build
+/tabs/build
+/slider/build
+/lorem-ipsum/build
+/color-generator/build
+/grocery-bud/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

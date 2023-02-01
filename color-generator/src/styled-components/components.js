@@ -65,8 +65,8 @@ export const Input = styled.input.attrs({ type: "text" })`
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   ${({ error }) => (
-        error && `border:2px solid ${colors.danger};`
-    )}
+    error && `border:2px solid ${colors.danger};`
+  )}
   @media screen and (min-width: 600px) {
     font-size: 1.4rem;
     width: 250px;
@@ -111,8 +111,8 @@ export const ColorRender = styled.div`
   background-color: rgb(${({ bgColor }) => bgColor});
   cursor: pointer;
   ${({ color }) => (
-        (color === 'dark' && `color:${colors.lightColor}`) || (color === 'light' && `color:${colors.darkColor}`)
-    )}
+    (color === 'dark' && `color:${colors.lightColor}`) || (color === 'light' && `color:${colors.darkColor}`)
+  )}
 
 `
 
