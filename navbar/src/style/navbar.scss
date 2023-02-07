@@ -1,0 +1,114 @@
+@import "color";
+nav {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-shadow: 0px 2px 7px rgb(163, 163, 163);
+    .logo {
+        width: 100%;
+        padding: 1rem 0.8rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        #hamborger {
+            border: none;
+            outline: none;
+            background-color: transparent;
+            font-size: 1.8rem;
+            line-height: 1.8rem;
+            color: $light-blue;
+            transition: $transition;
+            &:hover {
+                color: $dark-blue;
+                transform: rotate(90deg);
+                cursor: pointer;
+            }
+        }
+    }
+    .links {
+        overflow: hidden;
+        height: 8rem;
+        width: 100%;
+        transition: all 1.2s ease;
+        ul {
+            li {
+                display: block;
+                padding: 0.4rem 0.8rem;
+                transition: $transition;
+                a {
+                    font-size: 1.3rem;
+                }
+                &:hover {
+                    background-color: $body-back-color;
+                    padding-left: 1rem;
+                }
+            }
+        }
+    }
+    .social {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    nav {
+        padding: 1rem 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        .logo {
+            width: max-content;
+            padding: 0rem 0.5rem;
+            #hamborger {
+                display: none;
+            }
+        }
+        .links {
+            height: max-content !important;
+            width: max-content;
+            margin-top: unset;
+            ul {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                li {
+                    padding: 0 0.5rem;
+                    transition: none;
+                    a {
+                        font-size: 1.1rem;
+                        &:hover {
+                            color: $light-blue;
+                            padding-left: initial;
+                        }
+                    }
+                    &:hover {
+                        color: $light-blue;
+                        background-color: initial;
+                        padding-left: 0.5rem;
+                    }
+                }
+            }
+        }
+        .social {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $light-blue;
+            transition: $transition;
+            li {
+                font-size: 1.2rem;
+                line-height: 1.3rem;
+                padding: 0 0.5rem;
+                a {
+                    color: $light-blue;
+                    &:hover {
+                        color: $body-back-color;
+                    }
+                }
+            }
+        }
+    }
+}

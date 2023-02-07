@@ -11,6 +11,8 @@
 /lorem-ipsum/node_modules
 /color-generator/node_modules
 /grocery-bud/node_modules
+/navbar/node_modules
+
 /.pnp
 
 # testing
@@ -27,6 +29,8 @@
 /lorem-ipsum/build
 /color-generator/build
 /grocery-bud/build
+/navbar/build
+
 
 # misc
 .DS_Store

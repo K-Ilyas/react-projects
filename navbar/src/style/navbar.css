@@ -1,0 +1,113 @@
+nav {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-shadow: 0px 2px 7px #a3a3a3;
+}
+nav .logo {
+  width: 100%;
+  padding: 1rem 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo #hamborger {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  color: #5fb9c5;
+  transition: all 0.3s ease;
+}
+nav .logo #hamborger:hover {
+  color: #20666f;
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+nav .links {
+  overflow: hidden;
+  height: 8rem;
+  width: 100%;
+  transition: all 1.2s ease;
+}
+nav .links ul li {
+  display: block;
+  padding: 0.4rem 0.8rem;
+  transition: all 0.3s ease;
+}
+nav .links ul li a {
+  font-size: 1.3rem;
+}
+nav .links ul li:hover {
+  background-color: #d9f4fd;
+  padding-left: 1rem;
+}
+nav .social {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  nav {
+    padding: 1rem 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  nav .logo {
+    width: max-content;
+    padding: 0rem 0.5rem;
+  }
+  nav .logo #hamborger {
+    display: none;
+  }
+  nav .links {
+    height: max-content !important;
+    width: max-content;
+    margin-top: unset;
+  }
+  nav .links ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav .links ul li {
+    padding: 0 0.5rem;
+    transition: none;
+  }
+  nav .links ul li a {
+    font-size: 1.1rem;
+  }
+  nav .links ul li a:hover {
+    color: #5fb9c5;
+    padding-left: initial;
+  }
+  nav .links ul li:hover {
+    color: #5fb9c5;
+    background-color: initial;
+    padding-left: 0.5rem;
+  }
+  nav .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5fb9c5;
+    transition: all 0.3s ease;
+  }
+  nav .social li {
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    padding: 0 0.5rem;
+  }
+  nav .social li a {
+    color: #5fb9c5;
+  }
+  nav .social li a:hover {
+    color: #d9f4fd;
+  }
+}
+
+/*# sourceMappingURL=navbar.css.map */
