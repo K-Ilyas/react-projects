@@ -12,6 +12,7 @@
 /color-generator/node_modules
 /grocery-bud/node_modules
 /navbar/node_modules
+/sidebar-modal/node_modules
 
 /.pnp
 
@@ -30,6 +31,7 @@
 /color-generator/build
 /grocery-bud/build
 /navbar/build
+/sidebar-modal/build
 
 
 # misc
