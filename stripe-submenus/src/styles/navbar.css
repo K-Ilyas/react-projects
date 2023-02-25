@@ -1,0 +1,79 @@
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.5rem 0;
+}
+.navbar .header {
+  padding: 0 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .header img {
+  display: block;
+  height: 60px;
+}
+.navbar .pages {
+  display: none;
+}
+.navbar .pages li {
+  display: block;
+  padding: 0.6rem 2rem;
+  cursor: default;
+  color: white;
+  font-weight: bold;
+}
+.navbar button {
+  padding: 0.5rem 1rem;
+  border: none;
+  font-size: 1rem;
+  line-height: 1rem;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.navbar button:hover {
+  opacity: 0.7;
+}
+.navbar #sign-in {
+  display: none;
+}
+
+@media screen and (min-width: 900px) {
+  .navbar .pages li {
+    padding: 0 3rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  .navbar .pages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar .pages li {
+    display: block;
+    padding: 0.6rem 2rem;
+  }
+  .navbar .header {
+    padding: 0 0;
+    width: max-content;
+  }
+  .navbar .header button {
+    display: none;
+  }
+  .navbar #sign-in {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=navbar.css.map */

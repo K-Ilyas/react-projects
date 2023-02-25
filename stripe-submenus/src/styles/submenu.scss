@@ -1,0 +1,61 @@
+@import "color";
+.submenu {
+  background-color: white;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  height: 120px;
+  top: 4rem;
+  left: 50%;
+  z-index: 10;
+  display: none;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px $light-gray, -1px 1px 2px $light-gray,
+    1px -1px 2px $light-gray, -1px -1px 2px $light-gray;
+  .title {
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    margin: 1rem 0;
+    font-size: 1.1rem;
+  }
+  .links {
+    display: grid;
+    gap: 0.25rem 2rem;
+    a {
+      margin: 0.5rem 0;
+      color: $links-gray;
+      font-size: 1rem;
+      width: 150px;
+      span {
+        padding: 0 0.5rem 0 0;
+      }
+    }
+  }
+  &::before {
+    content: " ";
+    position: fixed;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+    position: absolute;
+    top: -11px;
+    left: calc(50% - 10px);
+  }
+}
+
+.show-submenu {
+  display: block;
+  transition: $transition;
+}
+
+.col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.col-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.col-4 {
+  grid-template-columns: repeat(4, 1fr);
+}

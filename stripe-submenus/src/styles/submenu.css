@@ -1,0 +1,61 @@
+.submenu {
+  background-color: white;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  height: 120px;
+  top: 4rem;
+  left: 50%;
+  z-index: 10;
+  display: none;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px #857d7d, -1px 1px 2px #857d7d, 1px -1px 2px #857d7d, -1px -1px 2px #857d7d;
+}
+.submenu .title {
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}
+.submenu .links {
+  display: grid;
+  gap: 0.25rem 2rem;
+}
+.submenu .links a {
+  margin: 0.5rem 0;
+  color: rgba(30, 0, 93, 0.5);
+  font-size: 1rem;
+  width: 150px;
+}
+.submenu .links a span {
+  padding: 0 0.5rem 0 0;
+}
+.submenu::before {
+  content: " ";
+  position: fixed;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid white;
+  position: absolute;
+  top: -11px;
+  left: calc(50% - 10px);
+}
+
+.show-submenu {
+  display: block;
+  transition: all 0.3s linear;
+}
+
+.col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.col-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.col-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/*# sourceMappingURL=submenu.css.map */

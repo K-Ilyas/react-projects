@@ -13,7 +13,7 @@
 /grocery-bud/node_modules
 /navbar/node_modules
 /sidebar-modal/node_modules
-
+/stripe-submenus/node_modules
 /.pnp
 
 # testing
@@ -32,7 +32,7 @@
 /grocery-bud/build
 /navbar/build
 /sidebar-modal/build
-
+/stripe-submenus/build
 
 # misc
 .DS_Store
