@@ -1,0 +1,74 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+.item .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item .left img {
+  width: 4.5rem;
+  height: auto;
+}
+.item .left .item-info {
+  padding-left: 1rem;
+}
+.item .left .item-info .title {
+  color: black;
+  font-size: 1.2rem;
+}
+.item .left .item-info .price {
+  color: #857d7d;
+  font-size: 0.9rem;
+}
+.item .left .item-info button {
+  font-size: 0.9rem;
+  width: 1rem;
+  color: darkblue;
+}
+.item .left .item-info button:hover {
+  color: #20666f;
+}
+.item .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.item .right .amount {
+  width: 1rem;
+  font-size: 1.5rem;
+}
+.item .right button {
+  font-size: 1.2rem;
+  width: 1rem;
+  color: #465fff;
+}
+.item .right button:hover {
+  transform: scale(1.2);
+  color: #46d3e6;
+}
+.item button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+@media screen and (min-width: 700px) {
+  .item .left .item-info .title {
+    font-size: 1.5rem;
+  }
+  .item .left .item-info .price {
+    font-size: 1.1rem;
+  }
+  .item .left .item-info button {
+    font-size: 1;
+  }
+}
+
+/*# sourceMappingURL=cart.css.map */

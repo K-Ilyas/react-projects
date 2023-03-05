@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Kodchasan:wght@200&display=swap");
+*,
+:after,
+:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Kodchasan", sans-serif;
+  background-color: #e7e7e7;
+}
+body #root {
+  width: 100%;
+  height: 100%;
+}
+body #root main {
+  width: 100%;
+  height: 100%;
+}
+body .loading {
+  margin-top: 5rem;
+}
+body .loading p {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  font-family: "Kodchasan", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:active, a:hover, a:focus {
+  color: black;
+}
+
+/*# sourceMappingURL=index.css.map */

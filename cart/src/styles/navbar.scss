@@ -1,0 +1,59 @@
+@import "color";
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $navbar_color;
+  padding: 1.25rem 2rem;
+  .center {
+    max-width: 50rem;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .navbar-title {
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .navbar-logo {
+      position: relative;
+      svg {
+        fill: white !important;
+        width: 2rem;
+      }
+      .amount {
+        position: absolute;
+        left: 50%;
+        top: -40%;
+        font-size: 1.3rem;
+        background-color: $light-blue;
+        color: white;
+        width: 33px;
+        height: 33px;
+        border-radius: 50%;
+        font-size: bold;
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          line-height: 33px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .navbar {
+    .center {
+      .navbar-title {
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+      }
+    }
+  }
+}

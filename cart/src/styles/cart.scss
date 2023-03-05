@@ -1,0 +1,79 @@
+@import "color";
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 4.5rem;
+      height: auto;
+    }
+    .item-info {
+      padding-left: 1rem;
+      .title {
+        color: black;
+        font-size: 1.2rem;
+      }
+      .price {
+        color: $light-gray;
+        font-size: 0.9rem;
+      }
+      button {
+        font-size: 0.9rem;
+        width: 1rem;
+        color: darkblue;
+        &:hover {
+          color: $dark-blue;
+        }
+      }
+    }
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    .amount {
+      width: 1rem;
+      font-size: 1.5rem;
+    }
+    button {
+      font-size: 1.2rem;
+      width: 1rem;
+      color: $navbar_color;
+      &:hover {
+        transform: scale(1.2);
+        color: $light-blue;
+      }
+    }
+  }
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: $transition;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .item {
+    .left {
+      .item-info {
+        .title {
+          font-size: 1.5rem;
+        }
+        .price {
+          font-size: 1.1rem;
+        }
+        button {
+          font-size: 1;
+        }
+      }
+    }
+  }
+}
