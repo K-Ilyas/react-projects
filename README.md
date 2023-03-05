@@ -19,3 +19,5 @@
 ### useContexte
  1. Sidebar-modal [Demo](https://k-ilya-sidebar-modal.netlify.app/)
  1. Stripe-submenu [Demo](https://k-ilyas-stripe-submenu.netlify.app/)
+### useReducer and useContexte
+ 1. cart [Demo](https://k-ilyas-cart.netlify.app/)
