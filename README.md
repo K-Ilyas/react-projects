@@ -21,3 +21,6 @@
  1. Stripe-submenu [Demo](https://k-ilyas-stripe-submenu.netlify.app/)
 ### useReducer and useContexte
  1. cart [Demo](https://k-ilyas-cart.netlify.app/)
+### React Router and useCallback
+ 1. cocktails [Demo](https://k-ilyas-cocktails.netlify.app/)
+
