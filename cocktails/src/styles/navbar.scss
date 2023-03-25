@@ -1,0 +1,41 @@
+@import "color";
+.navbar {
+    background-color: #ffffff;
+    width: 100%;
+    box-shadow: 3px 0px 3px 4px $color_shadow;
+    border-bottom: 2px solid $heavy_green;
+    .nav-center {
+        height: 4rem;
+        max-width: 85%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+            width: 150px;
+        }
+        .links {
+            .link {
+                padding: 0 0.5rem;
+                text-transform: capitalize;
+                font-weight: bold;
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .navbar {
+        .nav-center {
+            .logo {
+                width: 200px;
+            }
+            .links {
+                .link {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}

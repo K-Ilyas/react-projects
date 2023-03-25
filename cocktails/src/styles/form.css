@@ -1,0 +1,33 @@
+.form {
+  max-width: 600px;
+  width: 95%;
+  background-color: white;
+  margin: 4rem auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  grid-gap: 2rem;
+}
+.form label {
+  color: #005400;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.form input {
+  width: 100%;
+  padding: 1rem;
+  background-color: #d6d6d6;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: none;
+}
+
+@media screen and (max-width: 400px) {
+  .form label {
+    font-size: 0.8rem;
+  }
+}
+
+/*# sourceMappingURL=form.css.map */

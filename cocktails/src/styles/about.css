@@ -1,0 +1,15 @@
+.about .about-center {
+  max-width: 700px;
+  margin: 4rem auto;
+  padding: 1rem 1rem;
+}
+.about .about-center .title {
+  text-align: center;
+  margin: 1rem 0;
+}
+.about .about-center p {
+  line-height: 2.5rem;
+  text-align: justify;
+}
+
+/*# sourceMappingURL=about.css.map */
